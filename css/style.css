@@ -13,15 +13,16 @@ body{
 	border-bottom: 1px solid #d3d3d3;
 	background: #fff;
 	padding: 42px 40px 19px;
+	overflow: hidden;
 } 
-.header__logo{
+.logo{
 	height: 100%;
 	display: flex;
 	align-items: center;
 	margin-bottom: 38px;
 	margin-left: -5px;
 }
-.header__logo__circle__1{
+.logo__circle__1{
 	width: 37px;
 	height: 37px;
 	border-radius: 50px;
@@ -29,19 +30,22 @@ body{
 	float: left;
 	margin-left: 11px;
 }
-.header__logo__circle__2{
+.logo__circle__2{
 	width: 37px;
 	height: 37px;
 	border-radius: 50px;
 	background: #f8d277;  
 }
-.header__logo__circle{ 
+.logo__circle{ 
 	float: left; 
 	padding-right: 16px;
 }
-.header__logo__text{ 
+.logo__text{ 
 	padding-right: 40px; 
 	height: 100%;
+}
+.header__logo__text{
+	font-size: 25px;
 }
 .header__logo__comment{ 
 	padding-left: 27px;
@@ -55,22 +59,106 @@ body{
 .header__logo__comment__subtext{
 	display: block; 
 	color: #919191;
+} 
+.menu__list{
+	display: flex; 
+}
+.menu__list > li > a{
+	text-transform: uppercase;
+	color: #aeaeae; 
+	text-decoration: none;
+}
+.menu__list > li{
+	list-style: none; 
 }
 .header__menu{
 	border-top: 1px solid #aeaeae;
 	border-bottom: 1px solid #aeaeae;
 	padding: 14px 0 15px 0;
 }
-.header__menu_list{
+.header__menu__list{
 	display: flex;
 	justify-content: flex-start;
 }
-.header__menu_list > li > a{
+.header__menu__list > li > a{
 	text-transform: uppercase;
 	color: #aeaeae; 
 	text-decoration: none;
 }
-.header__menu_list > li{
+.header__menu__list > li{
 	list-style: none;
 	margin-right: 77px;
+}
+.main__section{
+	margin: 39px 0 23px;
+}
+.main__section__featured__products__h1{
+	margin-bottom: 11px;
+}
+h1{
+	color: #828383;
+}
+.main__section__featured__products__container__carousel{
+	border: 1px solid #b3b3b3;
+}
+.main__section__featured__products__container__carousel_img{
+	max-width: 100%;
+	padding: 1px;
+}
+.footer__logo__text{
+	font-size: 14px;
+}
+.footer__logo{
+	margin: 24px 0 21px;
+	justify-content: center;
+}
+.footer__menu__list{
+	display: flex;
+	justify-content: center;
+}
+.footer__menu__list > li > a{
+	text-transform: uppercase;
+	color: #535353; 
+	text-decoration: none;
+	font-size: 12px;
+}
+.footer__menu__list > li{
+	list-style: none;
+	padding: 0 9px;
+	border-right: 1px solid #aeaeae;
+}
+.footer__copyright{
+	margin-top: 6px; 
+	text-align: center;
+	color:  #535353;
+}
+.copyright__text{
+	font-size: 12px;
+}
+.copyright__text__number{
+	font-size: 10px;
+}
+footer{ 
+	border-top: 1px solid #cccccc;
+}
+.our__client{ 
+	overflow: hidden;
+}
+.our__client__h1::before, .our__client__h1::after{
+	content: " ";
+	display: inline-block; 
+	height: 1px; 
+	width: 100%;
+	background: #cccccc;   
+	align-items: center;
+	position: relative;
+	vertical-align: middle;
+}
+.our__client__h1::before{ 
+	margin-left: -96%; 
+	right: 6px;
+}
+.our__client__h1::after{   
+	margin-right: -100%; 
+	left: 6px;
 }
